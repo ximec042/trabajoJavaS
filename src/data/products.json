@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "name": "Guitarra electroacustica",
+        "price": 80000,
+        "discount": 50,
+        "category": "instrumentos"
+    },
+    {
+        "id": 2,
+        "name": "piano",
+        "price": 500000,
+        "discount": 3,
+        "category": "intrumentos"
+    },
+    {
+        "id": 3,
+        "name": "violin",
+        "price": 50000,
+        "discount": 25,
+        "category": "intrumentos"
+    },
+    {
+        "id": 4,
+        "name": "trompeta",
+        "price": 47900,
+        "discount": 10,
+        "category": "intrumentos"
+    },
+    {
+        "id": 5,
+        "name": "bateria",
+        "price": 53000,
+        "discount": 20,
+        "category": "intrumentos"
+    },
+    {
+        "id": 6,
+        "name": "microfono 1",
+        "price": 20999,
+        "discount": 12,
+        "category": "microfonos"
+    },
+    {
+        "id": 7,
+        "name": "microfono 2",
+        "price": 36700,
+        "discount": 5,
+        "category": "microfonos"
+    },
+    {
+        "id": 8,
+        "name": "microfono 3",
+        "price": 148000,
+        "discount": 2,
+        "category": "microfonos"
+    },
+    {
+        "id": 9,
+        "name": "microfono 4",
+        "price": 11399,
+        "discount": 0,
+        "category": "microfonos"
+    },
+    {
+        "id": 10,
+        "name": "microfono 5",
+        "price": 1200,
+        "discount": 10,
+        "category": "microfonos"
+    },
+    {
+        "id": 11,
+        "name": "Pedalera",
+        "price": 29990,
+        "discount": 12,
+        "category": "accesorios"
+    },
+    {
+        "id": 12,
+        "name": "amplificador",
+        "price": 32990,
+        "discount": 0,
+        "category": "accesorios"
+    },
+    {
+        "id": 13,
+        "name": "pedalera 2",
+        "price": 34990,
+        "discount": 0,
+        "category": "accesorios"
+    },
+    {
+        "id": 14,
+        "name": "mousewheel ",
+        "price": 10999,
+        "discount": 5,
+        "category": "accesorios"
+    },
+    {
+        "id": 15,
+        "name": "mousewheel 2",
+        "price": 15979,
+        "discount": 12,
+        "category": "accesorios"
+    },
+    {
+        "id": 16,
+        "name": "prueba",
+        "price": 500000,
+        "discount": 3,
+        "category": "intrumentos"
+    },
+    {
+        "id": 17,
+        "name": "prueba",
+        "price": 500000,
+        "discount": 3,
+        "category": "intrumentos"
+    },
+    null,
+    4,
+    {
+        "id": 20,
+        "name": "prueba",
+        "price": 500000,
+        "discount": 3,
+        "category": "intrumentos"
+    }
+]

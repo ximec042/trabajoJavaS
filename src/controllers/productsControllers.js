@@ -21,7 +21,7 @@ const controllers = {
 
         products.push(product);
 
-        let productsJson = JSON.stringify(products,  null, 4);
+        let productsJson = JSON.stringify(products, null, 4);
         fs.writeFileSync (ruta, productsJson, {encoding: 'utf-8'});
         console.log(productsJson);
 

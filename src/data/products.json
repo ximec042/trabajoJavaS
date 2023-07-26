@@ -118,13 +118,20 @@
         "discount": 3,
         "category": "intrumentos"
     },
-    null,
-    4,
+    {
+        "id": 18,
+        "name": "guitarra"
+    },
+    {
+        "id": 19,
+        "name": "guitarra"
+    },
     {
         "id": 20,
-        "name": "prueba",
-        "price": 500000,
-        "discount": 3,
-        "category": "intrumentos"
+        "name": "guitarra"
+    },
+    {
+        "id": 21,
+        "name": "guitarra"
     }
 ]

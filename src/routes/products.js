@@ -1,23 +1,13 @@
-const path = require('path');
+
 const express = require('express');
-const multer = require('multer');
 const router = express.Router();
 const controller = require('../controllers/productsControllers');
+const logs = require('../middlewares/logger');
+const upload = require('../middlewares/storage');
 
-
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        cb(null,path.resolve(__dirname, '../../public/images') );
-    },
-    filename: (req, file, cb) => {
-        cb(null, 'image.jpg' )
-    }
-});
-
-const upload = multer({storage: storage});
-
-router.get('/listar', controller.listar);
-router.get('/detalle', controller.detalle);
+router.get('/listar', logs, controller.listar);
+router.get('/detalle/:id', controller.detalle);
+router.put('/update/:id', controller.update);
 router.post('/crear',upload.single('image'), controller.crear);
 
 module.exports = router;

@@ -1,38 +1,50 @@
-const path = require('path');
-const fs = require('fs');
 
-const ruta = path.resolve(__dirname, '../data/products.json');
-const jsonProducts = fs.readFileSync(ruta, {encoding: 'utf-8'});
-let products = JSON.parse(jsonProducts);
-console.log(products);
-
+const Product = require('../database/models/Product');
 
 
 
 const controllers = {
-    crear: (req, res) => {
-        let product = {};
-
-        product.id = products.length + 1;
-        product.name = req.body.name;
-        product.price = req.body.price;
-        product.discount = req.body.discount;
-        product.category = req.body.category;
-
-        products.push(product);
-
-        let productsJson = JSON.stringify(products, null, 4);
-        fs.writeFileSync (ruta, productsJson, {encoding: 'utf-8'});
-        console.log(productsJson);
-
+    crear: async (req, res) => {
+    
+      
+        try{
+            let product = {
+                name: req.body.name,
+                price: req.body.price,
+                discount: req.body.discount,
+                category:  req.body.category,
+                image:  req.file.filename,
+                colors:['azul','blanco','negro']
+            }
         
+        const productDatabase = await Product.create(product);
+        res.status(201).json(productDatabase);
+    
+
+        } catch(error) {
+            console.log(error);
+            if (error.errors.name){
+                return res.status(400).json({message: 'El campo name es requerido'})
+            }
+            res.status(500).json({message:'Internal server error'})
+          
+        }
+
         res.status(201).json(product);
     },
-    listar: (req, res) => {
-        res.json(products); 
+    update: async (req, res) => {
+        const product = await Product.findByIdAndUpdate(req.params.id, req.boy);
+        return res.status(200).json(product);
+
     },
-    detalle: (req, res) => {
-        res.json('Detalle del producto');
+
+    listar: async (req, res) => {
+        const products = await Product.find({})
+        res.status(200).json(products); 
+    },
+    detalle: async (req, res) => {
+        const product = await Product.findById({_id: req.params.id});
+        res.json(product );
     },
 }
 

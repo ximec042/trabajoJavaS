@@ -1,137 +1,129 @@
 [
     {
-        "id": 1,
         "name": "Guitarra electroacustica",
         "price": 80000,
         "discount": 50,
-        "category": "instrumentos"
+        "category": "instrumentos",
+        "image": "imagen1.jpg",
+        "detalle":" Guitarra electroacustica marca Fender"
     },
     {
-        "id": 2,
         "name": "piano",
         "price": 500000,
         "discount": 3,
-        "category": "intrumentos"
+        "category": "intrumentos",
+        "image": "imagen2.jpg",
+        "detalle": "piano marca Mason & Hamlin"
     },
     {
-        "id": 3,
         "name": "violin",
         "price": 50000,
         "discount": 25,
-        "category": "intrumentos"
+        "category": "intrumentos",
+        "image": "imagen3.jpg",
+        "detalle":"violin marca Stentor"
+
     },
     {
-        "id": 4,
         "name": "trompeta",
         "price": 47900,
         "discount": 10,
-        "category": "intrumentos"
+        "category": "intrumentos",
+        "image": "imagen4.jpg",
+        "detalle":"Trompeta marca Benson"
+
     },
     {
-        "id": 5,
         "name": "bateria",
         "price": 53000,
         "discount": 20,
-        "category": "intrumentos"
+        "category": "intrumentos",
+        "image": "imagen5.jpg",
+        "detalle":"Bateria marca bosh"
     },
     {
-        "id": 6,
         "name": "microfono 1",
         "price": 20999,
         "discount": 12,
-        "category": "microfonos"
+        "category": "microfonos",
+        "image": "imagen6.jpg",
+        "detalle":"Microfono marca Rode NTK"
     },
     {
-        "id": 7,
         "name": "microfono 2",
         "price": 36700,
         "discount": 5,
-        "category": "microfonos"
+        "category": "microfonos",
+        "image": "imagen7.jpg",
+        "detalle":"Microfono marca Shure SM58."
     },
     {
-        "id": 8,
         "name": "microfono 3",
         "price": 148000,
         "discount": 2,
-        "category": "microfonos"
+        "category": "microfonos",
+        "image": "imagen8.jpg",
+        "detalle":"Microfono marca Rode NT1A"
     },
     {
-        "id": 9,
         "name": "microfono 4",
         "price": 11399,
         "discount": 0,
-        "category": "microfonos"
+        "category": "microfonos",
+        "image": "imagen9.jpg,",
+        "detalle":"Microfono marca AKG C414 XLS"
     },
     {
-        "id": 10,
         "name": "microfono 5",
         "price": 1200,
         "discount": 10,
-        "category": "microfonos"
+        "category": "microfonos",
+        "image": "imagen10.jpg",
+        "detalle":"Microfono marca ennheiser MD421"
     },
     {
-        "id": 11,
         "name": "Pedalera",
         "price": 29990,
         "discount": 12,
-        "category": "accesorios"
+        "category": "accesorios",
+        "image": "imagen11.jpg",
+        "detalle":"Boss GX 100"
+    
+       
+       
+
     },
     {
-        "id": 12,
         "name": "amplificador",
         "price": 32990,
         "discount": 0,
-        "category": "accesorios"
+        "category": "accesorios",
+        "image": "imagen12.jpg",
+        "detalle":"Amplificador marca Fender"
     },
+
     {
-        "id": 13,
         "name": "pedalera 2",
         "price": 34990,
         "discount": 0,
-        "category": "accesorios"
+        "category": "accesorios",
+        "image": "imagen13.jpg",
+        "detalle":"Pedalera marca  Headrush MX5"
     },
     {
-        "id": 14,
         "name": "mousewheel ",
         "price": 10999,
         "discount": 5,
-        "category": "accesorios"
+        "category": "accesorios",
+        "image": "imagen14.jpg",
+        "detalle":"Pedalera marca  Hotone Ampero"
     },
     {
-        "id": 15,
         "name": "mousewheel 2",
         "price": 15979,
         "discount": 12,
-        "category": "accesorios"
-    },
-    {
-        "id": 16,
-        "name": "prueba",
-        "price": 500000,
-        "discount": 3,
-        "category": "intrumentos"
-    },
-    {
-        "id": 17,
-        "name": "prueba",
-        "price": 500000,
-        "discount": 3,
-        "category": "intrumentos"
-    },
-    {
-        "id": 18,
-        "name": "guitarra"
-    },
-    {
-        "id": 19,
-        "name": "guitarra"
-    },
-    {
-        "id": 20,
-        "name": "guitarra"
-    },
-    {
-        "id": 21,
-        "name": "guitarra"
+        "category": "accesorios",
+        "image": "imagen15.jpg",
+        "detalle":"Pedalera marca Line 6 Pod Go Wireless"
     }
 ]

@@ -12,8 +12,9 @@ const controllers = {
                 name: req.body.name,
                 price: req.body.price,
                 discount: req.body.discount,
+                description: req.body.description,
                 category:  req.body.category,
-                image:  req.file.filename,
+                image:  req.body.image,
                 colors:['azul','blanco','negro']
             }
         
@@ -30,7 +31,7 @@ const controllers = {
           
         }
 
-        res.status(201).json(product);
+        // res.status(201).json(product);
     },
     update: async (req, res) => {
         const product = await Product.findByIdAndUpdate(req.params.id, req.boy);
@@ -45,6 +46,11 @@ const controllers = {
     detalle: async (req, res) => {
         const product = await Product.findById({_id: req.params.id});
         res.json(product );
+    },
+
+    delete: async (req, res) => {
+        const product = await Product.deleteOne({_id: req.params.id});
+        res.json(product ); 
     },
 }
 
